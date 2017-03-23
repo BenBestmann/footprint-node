@@ -1,0 +1,30 @@
+{
+  "name": "footprint-node",
+  "version": "1.0.0",
+  "description": "A simple logger for node.js implemented using ES6 and the winston logging library.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BenBestmann/footprint-node.git"
+  },
+  "keywords": [
+    "logger",
+    "node",
+    "express",
+    "es6",
+    "winston"
+  ],
+  "author": "Benjamin Bestmann",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BenBestmann/footprint-node/issues"
+  },
+  "homepage": "https://github.com/BenBestmann/footprint-node",
+  "dependencies": {
+    "winston": "2.3.1",
+    "yn": "1.2.0"
+  }
+}
