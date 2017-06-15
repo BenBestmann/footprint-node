@@ -22,6 +22,18 @@ You can now log any message by calling the `.log(level, message)` method. For ex
 Logger.log('info', 'Process started...');
 ```
 
+As an alternative to specify the log level as a string the library supports utility methods for 
+all default log levels:
+
+```js
+Logger.error('Some message that will be logged with the ERROR level.');
+Logger.warn('Some message that will be logged with the WARN level.');
+Logger.info('Some message that will be logged with the INFO level.');
+Logger.verbose('Some message that will be logged with the VERBOSE level.');
+Logger.debug('Some message that will be logged with the DEBUG level.');
+Logger.silly('Some message that will be logged with the SILLY level.');
+```
+
 ### Configuration
 
 The logger is configured using node environment variables.
@@ -34,7 +46,7 @@ export LOGGER_LEVEL=...
 
 *Default: `info`*
 
-Specify the log level the logger should use. This can be set to any of the follwing values:
+Specify the log level the logger should use. This can be set to any of the following values:
 
 * error (highest priority)
 * warn

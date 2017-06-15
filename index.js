@@ -41,7 +41,7 @@ class Logger {
     /**
      * Logs a new message to the console.
      *
-     * @param level Logging level to be used (silly | debug | info | warn | error).
+     * @param level Logging level to be used (silly | debug | verbose | info | warn | error).
      * @param message The message to be logged.
      * @param meta Optional meta data that will be attached to the message.
      */
@@ -54,10 +54,76 @@ class Logger {
         }
     }
 
+    /**
+     * Logs a new message with logging level 'error'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    error(message, meta) {
+        this.log('error', message, meta);
+    }
+
+    /**
+     * Logs a new message with logging level 'warn'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    warn(message, meta) {
+        this.log('warn', message, meta);
+    }
+
+    /**
+     * Logs a new message with logging level 'info'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    info(message, meta) {
+        this.log('info', message, meta);
+    }
+
+    /**
+     * Logs a new message with logging level 'verbose'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    verbose(message, meta) {
+        this.log('verbose', message, meta);
+    }
+
+    /**
+     * Logs a new message with logging level 'debug'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    debug(message, meta) {
+        this.log('debug', message, meta);
+    }
+
+    /**
+     * Logs a new message with logging level 'silly'.
+     *
+     * @param message The message to be logged.
+     * @param meta Optional meta data that will be attached to the message.
+     */
+
+    silly(message, meta) {
+        this.log('silly', message, meta);
+    }
+
 }
 
 /*!
- * Module exports
+ * Export logger as singleton.
  */
 
 module.exports = new Logger();

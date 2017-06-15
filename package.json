@@ -1,6 +1,6 @@
 {
   "name": "footprint-node",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple logger for node.js implemented using ES6 and the winston logging library.",
   "main": "index.js",
   "scripts": {
